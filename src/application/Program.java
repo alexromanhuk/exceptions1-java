@@ -43,9 +43,10 @@ public class Program {
 			System.out.println("Reservation: " + reservation);
 		} catch (ParseException e) {
 			System.out.println("Data inválida: " + e);
-		} 
-		catch (DomainException e) {
+		} catch (DomainException e) {
 			System.out.println("Erro de argumentos: " + e);
+		} catch (RuntimeException e) {
+			System.out.println("Unexpected error: " + e);
 		}
 	}
 
